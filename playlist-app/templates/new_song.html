@@ -2,6 +2,9 @@
 
 {% block content %}
 
-<h1>Add a form that when submitted creates a new song!</h1>
-
+<h1>Add a song!</h1>
+<form action="/songs/add" method="POST">
+    {% include 'form_iter.html' %}
+    <button class="btn btn-lg btn-success">Add Song</button>
+</form>
 {% endblock %}

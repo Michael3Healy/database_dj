@@ -4,6 +4,9 @@
 
 <h1>Add a song to {{ playlist.name }}</h1>
 
-<h1>Add a form that when submitted adds a song to this playlist!</h1>
+<form action="/playlists/{{playlist.id}}/add-song" method="POST">
+    {% include 'form_iter.html' %}
+    <button class="btn btn-lg btn-success">Add Song</button>
+</form>
 
 {% endblock %}
